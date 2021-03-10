@@ -3,136 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>RocketMeet</title>
-    <style>
-        html, body, div, p, img, strong {
-            margin:0;
-            padding:0;
-            border:0;
-            outline:0;
-            font-size:100%;
-            vertical-align:baseline;
-            background:transparent;
-        }
 
-        body {
-            line-height:1;
-        }
+  <style type="text/css">
+    a[x-apple-data-detectors] {color: inherit !important;}
+    .button {
+          display: block;
+          position: relative;
+          padding: 10px;
+          color: white;
+          text-align: center;
+          background-color: #000000;
+          border: none;
+          font-family: 'Roboto', sans-serif; 
+      }
 
-        a {
-            margin:0;
-            padding:0;
-            font-size:100%;
-            vertical-align:baseline;
-            background:transparent;
-        }
-        body {
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        a {
-            text-decoration: none;
-            color: #000000;
-        }
-        .title {
-            font-size: 36px;
-        }
-        .icon {
-            padding-top: 25px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-        .lines {
-            margin-left: auto;
-            margin-right: auto;
-            padding: 0px 0px 0px 0px;
-            text-align: left;
-            width: 40%;
-        }
-        .main-div {
-            border-collapse: collapse;
-            table-layout: fixed;
-            border-spacing: 0;
-            vertical-align: top;
-            min-width: 320px;
-            margin: 0 auto;
-            background-color: #ffffff;
-        }
-        .footer {
-            width: 100%;
-            font-size: 12px;
-        }
-        .footer-container {
-            background-color: #f0f0f0;
-            padding: 30px;
-        }
-        .button {
-            padding-bottom: 15px;
-        }
-        @media screen and (min-width: 0) and (max-width: 812px) {
-            .lines {
-                margin-left: auto;
-                margin-right: auto;
-                padding: 0px 0px 0px 0px;
-                text-align: left;
-                width: 52% !important;
-            }
-        }
-        @media screen and (min-width: 0) and (max-width: 640px) {
-            .lines {
-                margin-left: auto;
-                margin-right: auto;
-                padding: 15px 0px 15px 4px !important;
-                text-align: justify;
-                width: 57% !important;
-        }
+      .button.two {
+          background-repeat: no-repeat;
+          background-position: -120px -120px, 0 0;
+          border-radius: 20px;
 
-    }
-    </style>
+          color: white;
+
+          background-image: -webkit-linear-gradient(
+            top left,
+            rgba(255, 255, 255, 0.2) 0%,
+            rgba(255, 255, 255, 0.2) 37%,
+            rgba(255, 255, 255, 0.8) 45%,
+            rgba(255, 255, 255, 0.0) 50%
+            );
+          background-image: -moz-linear-gradient(
+            0 0,
+            rgba(255, 255, 255, 0.2) 0%,
+            rgba(255, 255, 255, 0.2) 37%,
+            rgba(255, 255, 255, 0.8) 45%,
+            rgba(255, 255, 255, 0.0) 50%
+            );    
+          background-image: -o-linear-gradient(
+            0 0,
+            rgba(255, 255, 255, 0.2) 0%,
+            rgba(255, 255, 255, 0.2) 37%,
+            rgba(255, 255, 255, 0.8) 45%,
+            rgba(255, 255, 255, 0.0) 50%
+            );
+          background-image: linear-gradient(
+            0 0,
+            rgba(255, 255, 255, 0.2) 0%,
+            rgba(255, 255, 255, 0.2) 37%,
+            rgba(255, 255, 255, 0.8) 45%,
+            rgba(255, 255, 255, 0.0) 50%
+            );
+
+          -moz-background-size: 250% 250%, 100% 100%;
+          background-size: 250% 250%, 100% 100%;
+
+          -webkit-transition: background-position 0s ease;
+          -moz-transition: background-position 0s ease;       
+          -o-transition: background-position 0s ease;
+          transition: background-position 0s ease;
+      }
+
+      .button.two:hover {
+          background-position: 0 0, 0 0;
+          -webkit-transition-duration: 0.5s;
+          -moz-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+      }
+  </style>
+
 </head>
-<body style="text-align: center;font-family: Arial, Helvetica, sans-serif;background: #ffffff;background: transparent;outline: 0;margin: 0;border: 0;">
-    <div class="main-div">
-        <div class="icon" style="padding-top: 25px;display: block;margin-left: auto;margin-right: auto;width: 50%;">
-            <a href="https://rocketmeet.me" target="_blank" style="text-decoration: none;
-            color: #000000;">
-                <img src="cid:logo" alt="rocketmeet">
-            </a>
-        </div>
-        <div class="title" style="font-size: 36px;">
-            <a href="https://rocketmeet.me" target="_blank" style="text-decoration: none;
-            color: #000000;">
-                <strong>RocketMeet</strong>
-            </a>
-        </div>
-        <div>
-            <div class="lines" style="margin-left: auto; text-align: justify;margin-right: auto;font-size: 16px;padding: 4px 0px 8px 70px;text-align: left;width: 40%;color: #000000;line-height: 22.5px;">
-                <p>
-                    Hi,<br>{{senderName}} has invited you to participate in the <strong>{{pollTitle}}</strong> RocketMeet poll
-                </p>
-            </div>
-        </div>
-        <div class="button-container" style="padding: 10px;">
-            <div class="button" style="padding-bottom: 15px;">
-                <a href="https://rocketmeet.me/poll/{{pollID}}" style="box-sizing:border-box;display:inline-block;font-family:helvetica,sans-serif;text-decoration:none;text-align:center;color:#ffffff;background-color:#000000;border-radius:35px;width:auto;max-width:100%;word-break:break-word;word-wrap:break-word" target="_blank">
-                    <div style="display:block;padding:5px 20px 2px 20px;line-height:140%">
-                        <div style="font-size:20px;line-height:28px">Mark your availability</div>
-                    </div>
-                </a>                
-            </div>
-        </div>
-        <div class="footer-container" style="background-color: #f0f0f0;outline: 0;margin: 0;border: 0;padding: 30px;">
-            <div class="footer" style="width: 100%;font-size: 12px;color: #000000;">
-                <p style="line-height: 20px;">RocketMeet is a free and Open Source meeting scheduling application.
-                    <br> 
-                    <strong>
-                        <a href="https://rocketmeet.me" target="_blank" style="text-decoration: none;
-                        color: #000000;">Try now!</a>
-                    </strong>
-                </p>
-            </div>
-        </div>
-    </div>
+<body style="margin: 0; padding: 0;">
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td style="padding: 20px 0 30px 0;">
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; border: 1px solid #cccccc;">
+
+  <tr>
+    <td align="center" bgcolor="#000000" style="padding: 40px 0 30px 0;">
+        <a href="https://rocketmeet.me/"><div align="center" bgcolor="#000000"><img src="./images/logo.png"></div></a>
+      <div width="300" height="230" style="display: block; color: white; font-size: 50px; font-family: 'Roboto', sans-serif; padding: 1%">RocketMeet<div style="font-size: 10px">Scheduling meetings has never been faster<div></div>
+    </td>
+  </tr>
+
+  <tr>
+    <td bgcolor="#ffffff" style="padding: 40px 30px 40px 30px;">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+        <tr>
+          <td style="color: #153643; font-family: Arial, sans-serif;">
+            <h1 style="font-size: 24px; margin: 0;">Make sure to value your time, get voting!</h1>
+          </td>
+        </tr>
+        <tr>
+          <td style="color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 24px; padding: 20px 0 30px 0;">
+            <p style="margin: 0;">{{senderName}} has invited you to participate in the <strong>{{pollTitle}}</strong> RocketMeet poll.<br><br>Mark your availibility by selecting one of the time-slots that suits you. Click on the button below to check the poll.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+              <tr>
+                <td width="260" valign="top">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+                    <tr>
+                      <td>
+                        <img src="./images/invite.jpg" alt="" width="90%" height="140" style="display: block;" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 24px; padding: 25px 0 0 0;">
+                        <p style="margin: 0;"><strong>Invited by: </strong>{{senderName}}</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
+                <td width="260" valign="top">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+                    <tr>
+                      <td>
+                        <img src="./images/polltitle.jpg" alt="" width="100%" height="140" style="display: block;" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 24px; padding: 25px 0 0 0;">
+                        <p style="margin: 0;"><strong>Poll Title: </strong>{{pollTitle}}</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <tr>
+    <td align="center" style="padding: 40px 0 30px 0;">
+        <a href="https://rocketmeet.me/poll/{{pollID}}" style="box-sizing:border-box; display:inline-block; text-decoration:none;text-align:center; width:auto; max-width:100%" target="_blank">
+
+             <div class="button two" style="font-size:20px;line-height:28px;color:white"> Mark your availability </div>
+        </a> 
+    </td>
+  </tr>
+    <td bgcolor="#000000" style="padding: 30px 30px;">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+        <tr>
+          <td style="color: #ffffff; font-family: Arial, sans-serif; font-size: 14px;">
+            <p style="margin: 0;">&reg; RocketMeet<br/>
+           RocketMeet is a free and Open Source meeting scheduling application.</p>
+          </td>
+          <td align="right">
+            <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+              <tr>
+                <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
+                <td>
+                  <a href="https://rocketmeet.me/">
+                    <img src="./images/logo.png" alt="RocketMeet" width="38" height="38" style="display: block;" border="0" />
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
